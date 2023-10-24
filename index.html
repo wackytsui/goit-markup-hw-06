@@ -60,13 +60,42 @@
         <button type="button" class="hero-btn data-modal-open">Order Service</button>
         <div class="data-modal is-hidden">
             <div class="modal-content">
-                <span class="data-modal-close">&times;</span>
-                <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Modi, deserunt soluta ipsum voluptas 
-                    nesciunt facilis harum maiores eius dolor voluptates 
-                    recusandae est in et placeat adipisci eaque nostrum 
-                    accusamus quia!</p>
+                <!-- <span class="data-modal-close">&times;</span> -->
+                <div class="data-modal-close">
+                    <svg class="icon-hero circle">
+                        <use href="./images/icons.svg#icon-close-circle" height="24" width="24"></use>
+                    </svg>
+                    <svg class="icon-hero">
+                        <use href="./images/icons.svg#icon-close" height="8" width="8"></use>
+                    </svg>
+                </div>
+            <div class="contac">
+                <p>Leave your contacts and we will call you back</p>
+                <form action="">
+                    <label for="name">
+                        name
+                        <input type="text">
+                        <svg>
+                            <use href="./images/icons.svg#icon-person" height="30" width="30"></use>
+                        </svg>
+                    </label>
 
+                    <label for="phone">
+                        phone
+                        <input type="number">
+                        
+                    </label>
+
+                    <label for="email">
+                        e-mail
+                        <input type="email">
+                    </label>
+
+                    <label for="comment">
+                        <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                    </label>
+                </form>
+            </div>
             </div>
         </div>
     </section>
@@ -330,6 +359,8 @@
                 marketing & growth solutions.
             </p>
         </div>
+        
+        <!-- socials -->
         <div class="social-container">
             <p class="social-head">Social media</p>
             <ul class="social-list">
@@ -364,6 +395,22 @@
                 
             </ul>
         </div>
+        <!-- end of social -->
+
+        <!-- start of subscribe -->
+        <div class="subscribe-container">
+            <h4>subscribe</h4>
+            <form action="" class="form-container">
+                <input type="email" placeholder="E-mail" class="input-email" required>
+                <button type="submit" class="subscribe-btn">
+                    <p>subscribe</p>
+                    <svg class="icons">
+                        <use href="./images/icons.svg#icon-subscribe"></use>
+                    </svg>
+                </button>
+            </form>     
+        </div>
+        <!-- end of subscribe -->
     </footer>
     <script src="./js/modal.js"></script>
     </body>

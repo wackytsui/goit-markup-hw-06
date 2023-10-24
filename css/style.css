@@ -477,29 +477,30 @@ body {
 .footer-page {
     display: flex;
     height: 312px;
+    flex-direction: row;
     padding-inline-start: 156px;
     padding-inline-end: 156px;
+    padding-top: 100px;
+
 }
 
 .footer {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    padding-top: 101.5px;
     gap: 16px;
 }
 
-.logo {
+/* .logo {
     display: inline-flex;
     height: 24px;
     width: 115px;
-}
+} */
 
 .social-container {
     display: inline-flex;
     flex-direction: column;
     gap: 16px;
-    padding-top: 100px;
-    padding-left: 120px;
+    margin-inline-start: 120px;
 }
 
 .social-head {
@@ -534,6 +535,42 @@ body {
     margin: 0px;
 }
 
+.subscribe-container {
+    text-transform: capitalize;
+    margin-inline-start: 80px;
+}
+.subscribe-container h4 {
+    margin-bottom: 16px;
+}
+.form-container {
+    display: flex;
+    gap: 24px;
+}
+.input-email {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--WHITE) ;
+    padding: 16px 8px;
+    background: transparent;
+}
+.input-email::placeholder {
+    color: var(--WHITE);
+}
+
+.subscribe-btn {
+    display: flex;
+    gap: 16px;
+    background-color: var(--IRIS);
+    border-radius: 4px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    color: var(--WHITE);
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
 /* end of footer */
 
 /* start general styling for Portfolio page */
@@ -696,6 +733,13 @@ body {
 }
 
 .data-modal-close {
+    display: flex;
+}
+
+.circle {
+    fill: var(--CORNFLOWER);
+}
+/* .data-modal-close {
     color: rgba(46, 47, 66, 1);
     float: right;
     display: flex;
@@ -708,7 +752,7 @@ body {
     height: 24px;
     border-radius: 50%;
     border: 1px solid --GREY;
-}
+} */
 
 .data-modal-close:hover,
 .data-modal-close:focus {
