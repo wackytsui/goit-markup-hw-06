@@ -159,6 +159,8 @@ body {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -276,7 +278,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-transform: uppercase;
     width: 1440px;
     height: 600px;
     flex-shrink: 0;
@@ -768,6 +769,48 @@ body {
     color: var(--NAVY-BLUE);
     display: flex;
     margin-top: 72px;
-    text-align: center;
+    margin-bottom: 16px;
+    justify-content: center;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+}
+.input-contacts {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    gap: 4px;
+    position: relative;
+}
+.input-box {
+    border-radius: 4px;
+    height: 40px;
+    width: 360px;
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    border: 1px solid black;
+
+}
+.icon-person {
+    position: absolute;
+    top: 39px;
+    left: 10px;
+
+}
+.input-box:hover,
+.input-box:focus{
+    border: 1px solid var(--IRIS);
+    transition: transform 250ms ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-box:hover + .icon-person,
+.input-box:focus + .icon-person{
+    fill: var(--IRIS);
+    transition: transform 250ms ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* end of modal script */
