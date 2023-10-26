@@ -730,32 +730,44 @@ body {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 
                 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    
 }
 
-.data-modal-close {
-    display: flex;
-}
-
-.circle {
-    fill: var(--CORNFLOWER);
-}
 /* .data-modal-close {
-    color: rgba(46, 47, 66, 1);
-    float: right;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    float: right;
     font-size: 20px;
     margin: 24px 24px 0 0;
     background-color: var(--CORNFLOWER);
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border: 1px solid --GREY;
+    align-items: center;
+    justify-content: center;
 } */
-
+.data-modal-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    border-radius: 50%;
+    background-color: var(--CORNFLOWER);
+    border: 1px solid var(--CORNFLOWER);
+    margin: 24px 24px 0 0;
+    height: 20px;
+    width: 20px;
+}
 .data-modal-close:hover,
 .data-modal-close:focus {
     cursor: pointer;
+}
+.contacts-label {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--NAVY-BLUE);
+    display: flex;
+    margin-top: 72px;
+    text-align: center;
 }
 /* end of modal script */
