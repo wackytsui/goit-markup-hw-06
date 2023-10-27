@@ -829,12 +829,25 @@ body {
     text-decoration: none;
 }
 .privacy a {
-    color: var(--IRIS);
+    color: currentColor;
+}
+.policy-link {
+    text-decoration: none;
+}
+.policy-link:disabled{
+    text-decoration: none;
 }
 .send-btn {
     height: 56px;
     width: 169px;
     justify-content: center;
     align-items: center;
+}
+.checked-box:checked + .policy-text {
+    color: var(--NAVY-BLUE);
+}
+.checked-box:checked + .policy-text a{
+    color: var(--IRIS);
+    text-decoration: underline;
 }
 /* end of modal script */
