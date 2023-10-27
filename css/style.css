@@ -554,11 +554,11 @@ body {
     border: 1px solid var(--WHITE) ;
     padding: 16px 8px;
     background: transparent;
+    color: var(--WHITE);
 }
 .input-email::placeholder {
     color: var(--WHITE);
 }
-
 .subscribe-btn {
     display: flex;
     gap: 16px;
@@ -768,7 +768,7 @@ body {
     letter-spacing: 0.32px;
     color: var(--NAVY-BLUE);
     display: flex;
-    margin-top: 72px;
+    margin-top: 60px;
     margin-bottom: 16px;
     justify-content: center;
 }
@@ -812,5 +812,29 @@ body {
     fill: var(--IRIS);
     transition: transform 250ms ease-in-out;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-text {
+    padding: 8px 16px;
+    width: 360px;
+    height: 120px;
+    flex-shrink: 0;
+}
+.privacy {
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.1428;
+    letter-spacing: 0.48px;
+    color: var(--LIGHT-SLATE);
+    text-decoration: none;
+}
+.privacy a {
+    color: var(--IRIS);
+}
+.send-btn {
+    height: 56px;
+    width: 169px;
+    justify-content: center;
+    align-items: center;
 }
 /* end of modal script */
